@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+    <title>Image folder</title>
+    <style>
+        body{
+            margin: 3rem 6vw;
+            font: 15px/1.6 "Courier New", monospace;
+        }
+        h1, h2, h3, h4, h5, h6, p, ul, ol, code, pre, table, blockquote {
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+        a, a:visited {color: #039BE5}
+        a:hover {text-decoration: none}
+        pre {line-height: 1.1rem; background-color: #f2f2f2; padding: 0.75rem}
+        main {max-width: 640px}
+        .section {
+            /*border-bottom: solid 1px #cccccc;*/
+            padding-bottom: 0.5rem;
+            padding-top: 2rem ;
+        }
+        .section:first-of-type h4 {background-color: #FFEB3B; display: inline-block; padding: 0 0.5rem; margin-left: -0.5rem}
+        h4 {margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 1px}
+        .date  {float: right; font-size: 13px; font-weight: normal; line-height: 1.5rem}
+        p + ul { margin-top: -1.5rem; }
+        .last { font-size: 13px; color: #cccccc; }
+        .right {float: right}
+        .dim {opacity: 0.4}
+        .dim:hover {opacity: 1}
+        ul li {list-style-type: disc; position: relative}
+        ul li::before {
+            content: " ";
+            position: absolute;
+            left: -8ex;
+            vertical-align: middle;
+            margin: 0.25rem 0;
+            line-height: 1rem;
+            font-size: 11px;
+        }
+        ul li.css::before  { content: "css";  color: #ff0000; }
+        ul li.js::before   { content: "js";   color: #0000ff; }
+        ul li.html::before { content: "html"; color: green; }
+    </style>
+</head>
+
+<main>
+
+        <header>
+            <h3>Image folder</h3>
+        </header>
+
+        <div class="section"><h4>Purpose</h4>
+        <p>This folder ('img') should contain all images related to your projects.</p>
+        <p>
+            Create subfolders to match your actual project names (e.g. 'street', 'urban' etc.)
+            and copy your images to respective folders.
+            Every large image must have corespondent  thumbnail (small size) image if you
+            plan to use thumbnails section in your foliodot html page.
+        </p>
+        <p>Example of 'street' folder images:</p>
+        <pre><code class="narrow">
+ img/
+    ├─ street/
+    │   ├─ 01.jpg
+    │   ├─ 01_thumb.jpg
+    │   ├─ 02.jpg
+    │   ├─ 02_thumb.jpg
+    │   ├─ 03.jpg
+    │   ├─ 03_thumb.jpg
+    │   └─ etc.
+    │
+    ├─ urban/
+    └─ places/
+        </code></pre>
+        <p>
+            Thumbnail image name must have original (large) image name with <strong>"_thumb"</strong> sufix.
+            See example above.
+        </p></div>
+
+
+        <div class="section"><h4>Inserting images</h4>
+
+<pre><code> &lt;img src=&quot;img/street/01.jpg&quot;/&gt; </code></pre>
+        <p>or use <code>data-src</code> attribute for image lazy loading:</p>
+<pre><code> &lt;img data-src=&quot;img/street/01.jpg&quot;/&gt; </code></pre>
+        <p><strong>Thumbnail images are auto-included</strong> to html page via foliodot template engine, no action required.</p></div>
+
+        <div class="section"><h4>Worth to remember</h4>
+        <ul>
+            <li>Recommended size for large image is around <strong>900px</strong> on longer side.</li>
+            <li>Recommended size for thumbnail image is around <strong>320px</strong> on loger side.</li>
+            <li>You can name your images however you like.</li>
+            <li>Thumbnail image name must have <strong>"_thumb"</strong> sufix.</li>
+            <li>Thumbnail images are auto-included in html, no action required.</li>
+            <li>Thumbnail images are not required for projects without thumbnails section.</li>
+            <li>Feel free to delete this 'read_me' file once you got familiar with above guidelines.</li>
+        </ul></div>
+
+        <div class="section"><h4>DOCUMENTATION</h4>
+        <ul>
+            <li><a href="http://docs.foliodot.com/content/images">Using images</a></li>
+            <li><a href="http://docs.foliodot.com/">Foliodot documentation home</a></li>
+        </ul></div>
+
+        <div class="section"><h4>WEBSITE</h4>
+        <ul>
+            <li><a href="https://foliodot.com">https://foliodot.com</a></li>
+        </ul></div>
+
+
+
+</main>
+</html>
