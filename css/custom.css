@@ -4,7 +4,7 @@
 
 .-name {
   font-family: 'Play', sans-serif;
-  font-size: 9em;
+  font-size: 7em;
   line-height: 35%;
 }
 
@@ -37,14 +37,14 @@ nav {
 @media only screen and (max-width: 960px) {
   .-name {
     font-family: 'Play', sans-serif;
-    font-size: 5em;
+    font-size: 4em;
   }
 
   .-text-heading {
-    font-size: 5em;
+    font-size: 3em;
   }
 
   .-subtitle1 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 }
